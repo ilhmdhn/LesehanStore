@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/roboto"
+            android:text="Isi form untuk mendaftar"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/bg_edit_text"
+            android:drawableRight="@drawable/ic_baseline_lock_24"
+            android:hint="Username.."
+            android:padding="5dp"
+            android:digits=" 1234567890abcdefghijklmnopqrstuvwxyz._@"
+            android:inputType="textCapCharacters"
+            android:maxLength="15" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:drawableRight="@drawable/ic_baseline_person_24"
+            android:hint="Nama"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:drawableRight="@drawable/ic_baseline_email_24"
+            android:inputType="textEmailAddress"
+            android:hint="Email.."
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:drawableRight="@drawable/ic_baseline_lock_24"
+            android:hint="Password.."
+            android:inputType="textPassword"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/edtPasswordConfirmation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:drawableRight="@drawable/ic_baseline_lock_24"
+            android:hint="Konfirmasi Password.."
+            android:inputType="textPassword"
+            android:padding="5dp" />
+
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:drawableRight="@drawable/ic_baseline_lock_24"
+            android:hint="Nomor Telepon.."
+            android:inputType="number"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:drawableRight="@drawable/ic_baseline_lock_24"
+            android:hint="Alamat Lengkap.."
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_btn_dark_green"
+            android:text="Daftar"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/tv_have_an_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_above="@id/tvLogin"
+            android:gravity="center_horizontal"
+            android:text="Sudah punya akun?"
+            android:textColor="#7e7e7e"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:text="Masuk"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnImageChooser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="upload image"/>
+    </LinearLayout>
+
+</ScrollView>

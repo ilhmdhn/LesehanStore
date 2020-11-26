@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+
+    <ImageView
+        android:id="@+id/img_product_list_transaction"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name_product_list_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/img_product_list_transaction"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Nama Produk" />
+
+    <TextView
+        android:id="@+id/tv_harga_product_list_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/img_product_list_transaction"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_product_list_transaction"
+        tools:text="Harga" />
+
+    <TextView
+        android:id="@+id/tv_tgl_pesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_product_list_transaction" />
+
+    <Button
+        android:id="@+id/btn_transaksi_selesai"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/roboto"
+        android:paddingStart="5dp"
+        android:paddingRight="5dp"
+        android:text="Transaksi Selesai"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_btalkan_transaksi"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/holo_red_light"
+        android:fontFamily="@font/roboto"
+        android:paddingStart="5dp"
+        android:paddingRight="5dp"
+        android:text="Batalkan Transaksi"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_transaksi_selesai"
+        app:layout_constraintStart_toStartOf="@+id/btn_transaksi_selesai" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lesehan Store</string>
+    <string name="user_name">Nama Pengguna</string>
+    <string name="home">Home</string>
+    <string name="transaksi_sedang_diproses">Transaksi Sedang Diproses</string>
+    <string name="list_transaksi">List Transaksi</string>
+    <string name="profile">Profile</string>
+</resources>

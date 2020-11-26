@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadProductActivity"
+    android:paddingHorizontal="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+        android:id="@+id/edtProductName"
+        android:hint="Nama Produk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <EditText
+        android:id="@+id/edtProductMaterial"
+        android:hint="Bahan Produk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <EditText
+        android:id="@+id/edtProductColor"
+        android:hint="Bahan Produk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <EditText
+        android:id="@+id/edtProductOrigin"
+        android:hint="Asal Produk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <EditText
+        android:id="@+id/edtProductDescription"
+        android:hint="Diskripsi Produk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <EditText
+        android:id="@+id/edtProductPrice"
+        android:hint="Harga Produk"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <EditText
+        android:id="@+id/edtIdUser"
+        android:hint="ID User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnUploadProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload product"/>
+    </LinearLayout>
+</ScrollView>
